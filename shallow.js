@@ -1,20 +1,32 @@
-const employee = {
-    name: "Shubham",
-    empId: 12345,
-  };
-  
-  const newEmployee = employee;
-  
-  console.log(employee === newEmployee);
-  
- newEmployee.name = "Ram";
- newEmployee.salary=20000;
- newEmployee.age=22;
- newEmployee.sex="Male";
+var student={
+    1:"shubham",
+    2:"john",
+    3:"jack",
+    4:"jill"
+
+}
+
+var employee={
+    12:"shubham",
+    13:"sandeep",
+    14:"shrikant",
+    15:"chandra"
+
+}
+const func= (obj,key) => {
+   var val=obj[key];
+   if (val==undefined){
+       return null;
+   }
+   else{
+   return val;
+   }
+}
 
 
- delete newEmployee.empId;
-  
-  console.log(employee);
-  console.log(newEmployee);
-  
+
+console.log(func(employee,12));
+console.log(func(student,4));
+console.log(func(student,99));
+console.log(func(employee,15));
+console.log(func(employee,121));
