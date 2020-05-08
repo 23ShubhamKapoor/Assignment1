@@ -12,8 +12,8 @@ const employee = {
  newEmployee.age=22;
  newEmployee.sex="Male";
 
-
- delete newEmployee.empId;
+employee.EMPID=54321;
+ delete employee.empId;
   
   console.log(employee);
   console.log(newEmployee);
